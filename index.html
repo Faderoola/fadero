@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADERO OLAOLUWA SAMUEL QUIZ CBT APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <header>
+            <img src="logo.png" alt="Game Logo" id="logo">
+            <h1>FADERO OLAOLUWA SAMUEL QUIZ CBT APP</h1>
+        </header>
+        <div id="login-form">
+            <input type="text" id="username" placeholder="Enter your name">
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="container" id="quiz-container" style="display:none;">
+        <header>
+            <img src="logo.png" alt="Game Logo" id="Logo">
+            <h1>FADERO OLAOLUWA SAMUEL QUIZ CBT APP</h1>
+        </header>
+        <div id="timer">Time Left: <span id="time">30</span>seconds</div>
+        <div id="question-container">
+            <div id="question">Question will appear here</div>
+            <div class="option" id="optionA" onclick="checkAnswer('a')">A. <span id="optionA-text"></span></div>
+            <div class="option" id="optionB" onclick="checkAnswer('b')">B. <span id="optionB-text"></span></div>
+            <div class="option" id="optionC" onclick="checkAnswer('c')">C. <span id="optionC-text"></span></div>
+            <div class="option" id="optionD" onclick="checkAnswer('d')">D. <span id="optionD-text"></span></div>
+        </div>
+        <div id="navigation">
+            <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <div class="container" id="score-container" style="display:none;">
+        <header>
+            <img src="logo.png" alt="Game Logo" id="logo">
+            <h1>Thank you for participating in the Fadero common entrance exam</h1>
+        </header>
+        <div id="final-score"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>   

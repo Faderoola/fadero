@@ -1,0 +1,105 @@
+body {
+font-family: 'Times New Roman', Times, serif;
+background-color: aqua;
+background:url(images.jpg);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    height: 50px;
+    margin-right: 20px;
+}
+#login-form {
+ margin-top: 20px;
+} 
+
+#login-form input {
+ padding: 10px;
+ font-size: 16px;
+ margin-right: 10px;
+}  
+
+#login-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #c0c0c0;
+}
+
+#timer {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.option {
+    margin: 10px 0;
+    padding: 10px;
+    background: #c0c0c0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option:hover {
+    background: bisque;
+}
+
+#navigation {
+    margin-top: 20px;
+}
+
+#navigation button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #45a049;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#navigation button:hover {
+    background-color: yellow;
+}
+
+#result, #final-score {
+    margin-top: 20px;
+    font-size: 1.5em;
+} 
+
+img {
+    width: 50px;
+}
+
+
